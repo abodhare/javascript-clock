@@ -1,4 +1,5 @@
 function stringify(number) {
+    // add '0' before numbers less than 10
     return number < 10 ? "0" + number : number;
 }
 
@@ -9,9 +10,9 @@ function time() {
     let s = date.getSeconds(); // 0 - 59
     let session;
 
-    let day = date.getDate();
-    let month = date.getMonth();
-    let year = date.getFullYear();
+    let day = date.getDate(); // 1 - 31
+    let month = date.getMonth(); // 0 - 11
+    let year = date.getFullYear(); // full current year
 
     if (h == 0) {
         h = 12;
@@ -33,4 +34,5 @@ function time() {
     `;
 }
 
+// setTimeout used recursively within time() got null object for document.getElementById
 setInterval(time, 1000)
