@@ -1,0 +1,20 @@
+body {
+    background: black;
+}
+
+.clock {
+    position: absolute;
+    /* Move element by 50% of parent dimensions to bottom right */
+    top: 50%;
+    left: 50%;
+    /* Move element to top left by 50% of own length */
+    transform: translateX(-50%) translateY(-50%);
+    color: aqua;
+    font-size: 4em;
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+}
+
+.date {
+    font-size: 0.5em;
+    text-align: center;
+}
